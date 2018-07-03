@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <link rel = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    
+</head>
+
+<script>
+window.onload = function() { intro ()
+
+    $("#begin").on("click", function() {
+        
+         $("#trivia").show();
+        $("#begin").hide();
+        $("#line1").hide();
+        $("#line2").hide();
+        $("#line3").hide();
+
+        var timeRemaining = 45;
+    
+    var intervalId = setInterval( function () {
+        loadResults( timeRemaining );
+        timeRemaining--;
+        if ( timeRemaining === 0 ) {
+            clearInterval( intervalId );
+            process();
+        }
+    }, 1000);
+    
+    function loadResults ( timer ) {
+        console.log( timer );
+         
+        var timer = "<div>Time Remaining:" + timeRemaining + "</div>"
+    
+        $('.timer').html(timer);
+    }
+    
+
+});
+ }
+</script>
+<!-- <container> -->
+ 
+    <body id="bg">
+
+        <div class="container">
+                <h1>Father Of Inventions Trivia Game</h1>
+        <div id = "intro"></div>
+        
+        
+        <form id="trivia" name="trivia">
+            <div class = "timer"></div>
+            <h2>Who Invented the first car?</h2>
+            <div class="answers">
+                <input type="radio" name="questionOne" value="Mark Twain"> Mark Twain </input>
+                <input type="radio" name="questionOne" value="Albert Nyberg"> Albert Nyberg </input>
+                <input type="radio" name="questionOne" value="Karl Benz"> Karl Benz </input>
+                <input type="radio" name="questionOne" value="Henry Ford"> Henry Ford </input>
+            </div>
+            <h2>Who invented the first computer?</h2>
+            <div class="answers">
+                <input type="radio" name="questionTwo" value="Thomas Edison"> Thomas Edison </input>
+                <input type="radio" name="questionTwo" value="Benjamin Franklin"> Benjamin Franklin </input>
+                <input type="radio" name="questionTwo" value="Nyjah Huston"> Nyjah Huston </input>
+                <input type="radio" name="questionTwo" value="Charles Babbage"> Charles Babbage </input>
+            </div>
+            <h2>Who invented the first phone?</h2>
+            <div class="answers">
+                <input type="radio" name="questionThree" value="Alexander Graham Bell"> Alexander Graham Bell </input>
+                <input type="radio" name="questionThree" value="Charles Darwin"> Charles Darwin </input>
+                <input type="radio" name="questionThree" value="Shane O'neill"> Shane O'neill </input>
+                <input type="radio" name="questionThree" value="Karl Marx"> Karl Marx </input>
+            </div>
+            <h2>Who invented the phrase "bling bling"?</h2>
+            <div class="answers">
+                <input type="radio" name="questionFour" value="Gucci Mane"> Gucci Mane </input>
+                <input type="radio" name="questionFour" value="John D. Rockefeller"> John D. Rockefeller </input>
+                <input type="radio" name="questionFour" value="Barrack Obama"> Barrack Obama </input>
+                <input type="radio" name="questionFour" value="Lil Wayne"> Lil Wayne </input>
+            </div>
+            <h2>Who invented baseball?</h2>
+            <div class="answers">
+                <input type="radio" name="questionFive" value="Abner Doubleday"> Abner Doubleday </input>
+                <input type="radio" name="questionFive" value="James Naismith"> James Naismith </input>
+                <input type="radio" name="questionFive" value="jackie Robinson"> jackie Robinson </input>
+                <input type="radio" name="questionFive" value="Babe Ruth"> Babe Ruth </input>
+            </div>
+            <h2>Who invented dabbing?</h2>
+            <div class="answers">
+                <input type="radio" name="questionSix" value="50 Cent"> 50 Cent </input>
+                <input type="radio" name="questionSix" value="Migos"> Migos </input>
+                <input type="radio" name="questionSix" value="Soulja Boi"> Soulja Boi </input>
+                <input type="radio" name="questionSix" value="Bhad Bhabie"> Bhad Bhabie </input>
+            </div>
+            <h2>Who invented the nuclear bomb?</h2>
+            <div class="answers">
+                <input type="radio" name="questionSeven" value="Hitler"> Hitler </input>
+                <input type="radio" name="questionSeven" value="Kim Jong Un"> Kim Jong Un </input>
+                <input type="radio" name="questionSeven" value="Albert Einstein"> Albert Einstein </input>
+                <input type="radio" name="questionSeven" value="Albert Einstein"> Elon Musk </input>
+            </div>
+            <h2>Who invented flubber?</h2>
+            <div class="answers">
+                <input type="radio" name="questionEight" value="Robin Williams"> Robin Williams </input>
+                <input type="radio" name="questionEight" value="Amelia Earhart"> Amelia Earhart </input>
+                <input type="radio" name="questionEight" value="Benjamin Franklin"> Benjamin Franklin </input>
+                <input type="radio" name="questionEight" value="Professor Philip Brainard"> Professor Philip Brainard </input>
+            </div>
+       
+            <div class = "timer"></div>
+
+            <input button type="button" id="finish" name="button" value="FINISH!">
+        </form>
+      
+        <div id="result"></div>
+    </div>
+    </body>
+
+<script>
+    $('#finish').click(function() {
+        process();
+    });
+</script>
+</html>

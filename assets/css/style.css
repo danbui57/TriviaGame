@@ -1,0 +1,97 @@
+body, html {
+        height: 100%
+}
+
+h1  {clear:both;
+        float:top;
+        text-align:center;
+        font-size:60px;
+        color:white;
+        }
+
+.container {margin: 0 auto;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.8);
+                
+        }
+
+h2  {text-align:center;
+        font-size:40px;
+        color:white;}
+
+h3  {text-align:center;
+        font-size:50px;
+        color:red;}
+
+.answers   {text-align:center;
+            margin-bottom:50px;
+                color:white;}
+
+#bg {
+        
+        background-image: url("../images/triviapic.jpg");
+        min-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+
+#finish   {margin-left:47%;
+           margin-top:50px;
+            color:red;
+            font-size:20px;
+                border:inset}
+
+#finish:hover  {background:rgb(160, 153, 154);
+        color:rgb(122, 9, 9)}
+            
+            /* BellaManiXO */
+
+#line1          {
+        text-align:center;
+                margin-top:50px;
+                font-size: 60px;
+                color:rgb(255, 255, 255);
+                }
+
+
+
+#line2  {clear:both;
+        margin-top: 50px;
+        text-align:center;
+        color:rgb(255, 255, 255);
+        font-size:60px;
+        }
+
+#line3  {clear:both;
+        margin-top:50px;
+        text-align:center;
+        color:rgb(255, 255, 255);
+        font-size:60px;}
+
+#begin  {clear:both;
+        background:rgb(255, 255, 255);
+        color:red;
+        text-align:center;
+        margin:0px 400px;
+        font-size:50px;
+        border:outset
+                }
+
+#begin:hover    {
+                background:rgb(160, 153, 154);
+                color:rgb(122, 9, 9)}
+
+.timer  {font-size:60px;
+        color:red;
+        text-align:center;}
+
+
+.input   {font-size:40px;
+        text-align:center;
+        color:white;
+        }
+
+      
