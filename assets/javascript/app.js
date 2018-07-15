@@ -17,14 +17,15 @@ $("#trivia").hide();
 //correct or incorrect answers or left any blank answers
 function test(responses, answers) {
 
-    console.log(responses);
-    console.log(answers);
+    // console.log(responses);
+    // console.log(answers);
 
     var correctAnswers = 0;
 
     var wrongAnswers = 0;
 
     var unAnswered = 0;
+    
 
     // a for loop to loop through my array of answers 
     for (var i = 0; i < answers.length; i++) {
@@ -43,14 +44,18 @@ function test(responses, answers) {
         } else {
         
             wrongAnswers++;
+            console.log(responses[i])
         }
     };
 
 
-    return [correctAnswers, wrongAnswers, unAnswered];
+    return [correctAnswers, wrongAnswers, unAnswered, responses];
+
 
     
 }
+
+
 
 function process() {
 
@@ -85,9 +90,10 @@ function process() {
     var input = "<p class='input'>All Done!</p>" +
         "<p class='input'>Correct Answers:" + final[0] + "</p>" +
         "<p class='input'>Incorrect Answers:" + final[1] + "</p>" +
-        "<p class='input'> Unanswered:" + final[2] + "</p>"
+        "<p class='input'> Unanswered:" + final[2] + "</p>" 
+        //  + "<p class='input'> Here are the wrong answers you chose:" + final[3] + "</p>"
 
 
     $('#result').html(input);
-    $('#trivia').hide();
+    $('#trivia').hide(3000);
 };
