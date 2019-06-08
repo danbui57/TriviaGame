@@ -4,7 +4,7 @@ A father of inventions themed trivia form with multiple choice options. The play
 ## Built with
 
 ```markdown
-- Javascipt
+- Javascript
 - jQuery
 - CSS
 - HTML
