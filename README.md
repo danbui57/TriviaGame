@@ -11,5 +11,5 @@ A father of inventions themed trivia form with multiple choice options. The play
 - Google Fonts
 ```
 
-## Deployed App
+## Check it out
 * [Father of Inventions] (https://danbui57.github.io/TriviaGame/)
