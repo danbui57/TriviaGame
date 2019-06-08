@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+# Trivia Game
+A father of inventions themed trivia form with multiple choice options. The player will have a limited amount of time to finish the quiz (60 sec). The game ends when the time runs out. The page will reveal the number of questions that players answered correctly and incorrectly. The player cannot pick more than one answer per question.
 
-You can use the [editor on GitHub](https://github.com/danbui57/TriviaGame/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Built with
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+- Javascipt
+- jQuery
+- CSS
+- HTML
+- Google Fonts
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/danbui57/TriviaGame/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Deployed App
+* [Father of Inventions] (https://danbui57.github.io/TriviaGame/)
